@@ -1,19 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>깃헙 협업하기</title>
-</head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      .slide {
+        height: 300px;
+        overflow: hidden;
+      }
+      .slide ul {
+        display: flex;
 
-<body>
+        width: -webkit-calc(100% * 4);
+        width: -moz-calc(100% * 4);
+        width: calc(100% * 4);
+
+        animation: slide 8s infinite;
+      }
+
+      .slide li {
+        height: 300px;
+        width: -webkit-calc(100% / 4);
+        width: -moz-calc(100% / 4);
+        width: calc(100% / 4);
+      }
+
+      .slide li:nth-child(1) {
+        background: url(./img/1.jpg) no-repeat;
+        background-size: cover;
+      }
+      .slide li:nth-child(2) {
+        background: url(./img/2.jfif) no-repeat;
+        background-size: cover;
+      }
+      .slide li:nth-child(3) {
+        background: url(./img/3.jfif) no-repeat;
+        background-size: cover;
+      }
+      .slide li:nth-child(4) {
+        background: url(./img/20.jpg) no-repeat;
+        background-size: cover;
+      }
+
+      @keyframes slide {
+        0% {
+          margin-left: 0;
+        }
+        10% {
+          margin-left: 0;
+        }
+        25% {
+          margin-left: -100%;
+        }
+        35% {
+          margin-left: -100%;
+        }
+        50% {
+          margin-left: -200%;
+        }
+        60% {
+          margin-left: -200%;
+        }
+        75% {
+          margin-left: -300%;
+        }
+        85% {
+          margin-left: -300%;
+        }
+        100% {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
     <header></header>
     <section id="section01"></section>
-    <section id="section02"></section>
+    <section id="section02">
+      <div class="slide">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
     <section id="section03"></section>
     <footer></footer>
-</body>
-
+  </body>
 </html>
