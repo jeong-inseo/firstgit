@@ -81,11 +81,120 @@
           margin-left: 0;
         }
       }
+      ul li {
+        list-style: none;
+      }
+      h1 {
+        width: 20%;
+        float: left;
+        margin: 0 auto;
+        text-align: center;
+      }
+      header {
+        width: 1280px;
+        height: 50px;
+        margin: 0 auto;
+        background-color: beige;
+      }
+      nav {
+        width: 80%;
+        font-size: 0.875em;
+        float: left;
+      }
+      nav > ul {
+        width: 1280px;
+      }
+      nav > ul > li {
+        /* 메인매뉴 */
+        float: left;
+        width: 200px;
+        position: relative;
+      }
+      nav > ul > li > a {
+        display: block;
+        padding: 10px 20px;
+        font-weight: 500;
+        background-color: #999;
+        color: #fff;
+        text-align: center;
+      }
+      nav ul ul {
+        /* 서브메뉴 */
+        display: none;
+        position: absolute;
+        top: 40;
+        left: 0;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+        margin: 0;
+        padding: 0;
+      }
+      nav ul ul a {
+        display: block;
+        width: 100%;
+        padding: 0 38px 0 38px;
+        font-weight: 500;
+        text-align: center;
+        background-color: #fff;
+        color: #666;
+        line-height: 38px;
+      }
+      nav > ul > li:hover ul {
+        /* 서브메뉴 보이게 */
+        display: block;
+      }
+
+      nav ul ul a:hover {
+        background-color: #f4f4f4;
+      }
     </style>
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <h1 class="logo">
+        <a href="index.html">로고</a>
+      </h1>
+      <nav>
+        <ul class="cf">
+          <li>
+            <a href="#">menu1</a>
+            <ul class="sub">
+              <li><a href="#">sub1</a></li>
+              <li><a href="#">sub2</a></li>
+              <li><a href="#">sub3</a></li>
+              <li><a href="#">sub4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">menu2</a>
+            <ul class="sub">
+              <li><a href="#">sub1</a></li>
+              <li><a href="#">sub2</a></li>
+              <li><a href="#">sub3</a></li>
+              <li><a href="#">sub4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">menu3</a>
+            <ul class="sub">
+              <li><a href="#">sub1</a></li>
+              <li><a href="#">sub2</a></li>
+              <li><a href="#">sub3</a></li>
+              <li><a href="#">sub4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">mendu4</a>
+            <ul class="sub">
+              <li><a href="#">sub1</a></li>
+              <li><a href="#">sub2</a></li>
+              <li><a href="#">sub3</a></li>
+              <li><a href="#">sub4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <section id="section01"></section>
     <section id="section02">
       <div class="slide">
